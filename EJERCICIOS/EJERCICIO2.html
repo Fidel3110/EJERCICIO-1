@@ -9,17 +9,22 @@
     Numero 2: <input type="text" id="n2"><br> <br>
   </center>
   <legend>Operadores Aritmeticos</legend>
-  <input type=<"button" id="boton1" value="Suma" onclick="sumar()">
-  <input type=<"button" id="boton2" value="Resta" onclick="restar()">
-  <input type=<"button" id="boton3" value="Multiplicacion" onclick="multiplicar()">
-  <input type=<"button" id="boton4" value="Division" onclick="dividir()">
-  <input type=<"button" id="boton5" value="Modulo" onclick="modulo()">
-  <input type=<"button" id="boton6" value="Potencia" onclick="potencia()"><br><br>
+    <input type=<"button" id="boton1" value="Suma" onclick="sumar()">
+    <input type=<"button" id="boton2" value="Resta" onclick="restar()">
+    <input type=<"button" id="boton3" value="Multiplicacion" onclick="multiplicar()">
+    <input type=<"button" id="boton4" value="Division" onclick="dividir()">
+    <input type=<"button" id="boton5" value="Modulo" onclick="modulo()">
+    <input type=<"button" id="boton6" value="Potencia" onclick="potencia()"><br><br>
   <legend>Operadores Logicos</legend>
-  <input type=<"button" id="boton7" value="Bicondicional" onclick="bicondicional()">
-  <input type=<"button" id="boton8" value="Condicional" onclick="condicional()">
-  <input type=<"button" id="boton9" value="Conjuncion" onclick="conjuncion()">
-
+    <input type=<"button" id="boton7" value="Bicondicional" onclick="bicondicional()">
+    <input type=<"button" id="boton8" value="Condicional" onclick="condicional()">
+    <input type=<"button" id="boton9" value="Conjuncion" onclick="conjuncion()">
+    <input type=<"button" id="boton10" value="Disyuncion Devil" onclick="disyuncionDevil()">
+    <input type=<"button" id="boton11" value="Disyuncion Fuerte" onclick="disyuncionFuerte()"><br><br>
+  <legend> Operadores de Bits </legend>
+    <input tyoe="button" id="boton12" value="AND" onclick="and()">
+    <input tyoe="button" id="boton13" value="XOR" onclick="xor()">
+    <input tyoe="button" id="boton14" value="OR" onclick="or()">
   <script type="text/javascript">
     function sumar(){
       var num1= document.getElementById("n1").value;
@@ -85,6 +90,56 @@
       }
       else{
         alert("Falso")
+      }
+    }
+    function disyuncionDevil(){
+      var num1= document.getElementById("n1").value;
+      var num2= document.getElementById("n2").value;
+      if(num1=="falso" && n2=="falso"){
+        alert("Falso");
+      }
+      else{
+        alert("Verdadero")
+      }
+    }
+    function disyuncionFuerte(){
+      var num1= document.getElementById("n1").value;
+      var num2= document.getElementById("n2").value;
+      if(num1 == n2){
+        alert("Falso");
+      }
+      else{
+        alert("Verdadero")
+      }
+    }
+    function and(){
+      var num1= document.getElementById("n1").value;
+      var num2= document.getElementById("n2").value;
+      if(num1==1&&num2==1){
+        alert(1);
+      }
+      else{
+        alert(0);
+      }
+    }
+    function xor(){
+      var num1= document.getElementById("n1").value;
+      var num2= document.getElementById("n2").value;
+      if(num1==num2){
+        alert(0);
+      }
+      else{
+        alert(1);
+      }
+    }
+    function or(){
+      var num1= document.getElementById("n1").value;
+      var num2= document.getElementById("n2").value;
+      if(num1==0&&num2==0){
+        alert(0);
+      }
+      else{
+        alert(1);
       }
     }
   </script>
