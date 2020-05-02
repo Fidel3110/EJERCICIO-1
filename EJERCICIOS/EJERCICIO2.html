@@ -4,16 +4,21 @@
   <title> OPERACIONES </title>
 </head>
 <body>
-  Numero 1: <input type="text" id="n1"> <br>
-  Numero 2: <input type="text" id="n2"><br> <br>
-  <legend>Operadores </legend>
+  <center>
+    Numero 1: <input type="text" id="n1"> <br>
+    Numero 2: <input type="text" id="n2"><br> <br>
+  </center>
+  <legend>Operadores Aritmeticos</legend>
   <input type=<"button" id="boton1" value="Suma" onclick="sumar()">
   <input type=<"button" id="boton2" value="Resta" onclick="restar()">
   <input type=<"button" id="boton3" value="Multiplicacion" onclick="multiplicar()">
   <input type=<"button" id="boton4" value="Division" onclick="dividir()">
   <input type=<"button" id="boton5" value="Modulo" onclick="modulo()">
-  <input type=<"button" id="boton6" value="Potencia" onclick="potencia()">
-  <input type=<"button" id="boton7" value="Logicos" onclick="oLogicos()">
+  <input type=<"button" id="boton6" value="Potencia" onclick="potencia()"><br><br>
+  <legend>Operadores Logicos</legend>
+  <input type=<"button" id="boton7" value="Bicondicional" onclick="bicondicional()">
+  <input type=<"button" id="boton8" value="Condicional" onclick="condicional()">
+  <input type=<"button" id="boton9" value="Conjuncion" onclick="conjuncion()">
 
   <script type="text/javascript">
     function sumar(){
@@ -52,17 +57,34 @@
       var potencia= parseInt(num1)**parseInt(num2);
       alert("La potencia es: "+ potencia);
     }
-    function oLogicos(){
+    function bicondicional(){
       var num1= document.getElementById("n1").value;
       var num2= document.getElementById("n2").value;
-      if(num1>num2){
-        alert(num1 +" es mayor que "+ num2);
-      }
-      if(num1<num2){
-        alert(num1 +" es menor que "+ num2);
-      }
       if(num1==num2){
-        alert(num1 +" es igual que "+ num2);
+        alert("Verdadero");
+      }
+      else{
+        alert("Falso")
+      }
+    }
+    function condicional(){
+      var num1= document.getElementById("n1").value;
+      var num2= document.getElementById("n2").value;
+      if(num1=="verdadero" && n2=="falso"){
+        alert("Falso");
+      }
+      else{
+        alert("Verdadero")
+      }
+    }
+    function conjuncion(){
+      var num1= document.getElementById("n1").value;
+      var num2= document.getElementById("n2").value;
+      if(num1=="verdadero" && n2=="verdadero"){
+        alert("Verdadero");
+      }
+      else{
+        alert("Falso")
       }
     }
   </script>
