@@ -4,11 +4,15 @@
     <title>Modificando Estilo</title>
   </head>
     <body>
-      <p id="demo">Haz Click en el boton</p>
-      <button type="button" onclick="modificar()">Cambiar</button>
+      <p id="palabra">Haz Click en el boton</p>
+      <button type="button" onclick="agranda()">Agrandar</button>
+      <button type="button" onclick="disminuye()">Disminuir</button>
       <script type="text/javascript">
-        function modificar() {
-          document.getElementById("demo").innerHTML = "Bienvenido";
+        function agranda() {
+          document.getElementById('palabra').style.fontSize = '30px';
+        }
+        function disminuye() {
+          document.getElementById('palabra').style.fontSize = '5px';
         }
       </script>
   </body>
