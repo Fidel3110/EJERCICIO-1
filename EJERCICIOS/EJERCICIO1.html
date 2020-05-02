@@ -1,12 +1,15 @@
-<DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
     <title>Modificando Estilo</title>
   </head>
-  <body>
-    <h1 id= "palabra"> Hola </h1>
-    <script>
-      var cadena = document.getElemntById("palabra");
-    </script>
+    <body>
+      <p id="demo">Haz Click en el boton</p>
+      <button type="button" onclick="modificar()">Cambiar</button>
+      <script type="text/javascript">
+        function modificar() {
+          document.getElementById("demo").innerHTML = "Bienvenido";
+        }
+      </script>
   </body>
 </html>
