@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> SUMA </title>
+  <title> OPERACIONES </title>
 </head>
 <body>
   Numero 1: <input type="text" id="n1"> <br>
@@ -11,6 +11,9 @@
   <input type=<"button" id="boton2" value="Resta" onclick="restar()">
   <input type=<"button" id="boton3" value="Multiplicacion" onclick="multiplicar()">
   <input type=<"button" id="boton4" value="Division" onclick="dividir()">
+  <input type=<"button" id="boton5" value="Modulo" onclick="modulo()">
+  <input type=<"button" id="boton6" value="Potencia" onclick="potencia()">
+  <input type=<"button" id="boton7" value="Logicos" onclick="oLogicos()">
 
   <script type="text/javascript">
     function sumar(){
@@ -36,6 +39,31 @@
       var num2= document.getElementById("n2").value;
       var division= parseInt(num1)/parseInt(num2);
       alert("La division es: "+ division);
+    }
+    function modulo(){
+      var num1= document.getElementById("n1").value;
+      var num2= document.getElementById("n2").value;
+      var modulo= parseInt(num1)%parseInt(num2);
+      alert("El modulo es: "+ modulo);
+    }
+    function potencia(){
+      var num1= document.getElementById("n1").value;
+      var num2= document.getElementById("n2").value;
+      var potencia= parseInt(num1)**parseInt(num2);
+      alert("La potencia es: "+ potencia);
+    }
+    function oLogicos(){
+      var num1= document.getElementById("n1").value;
+      var num2= document.getElementById("n2").value;
+      if(num1>num2){
+        alert(num1 +" es mayor que "+ num2);
+      }
+      if(num1<num2){
+        alert(num1 +" es menor que "+ num2);
+      }
+      if(num1==num2){
+        alert(num1 +" es igual que "+ num2);
+      }
     }
   </script>
 </body>
