@@ -3,16 +3,21 @@
   <head>
     <title>Modificando Estilo</title>
   </head>
-    <body>
-      <p id="palabra">Haz Click en el boton</p>
-      <button type="button" onclick="agranda()">Agrandar</button>
-      <button type="button" onclick="disminuye()">Disminuir</button>
+    <body bgcolor="orange">
+      <center>
+        <br><br><br>
+        <p id="palabra">Haz Click en el boton</p>
+        <button type="button" onclick="agranda()">Agrandar</button>
+        <button type="button" onclick="disminuye()">Disminuir</button>
+      </center>
       <script type="text/javascript">
         function agranda() {
           document.getElementById('palabra').style.fontSize = '30px';
+          document.getElementById('palabra').style.color = "red";
         }
         function disminuye() {
-          document.getElementById('palabra').style.fontSize = '5px';
+          document.getElementById('palabra').style.fontSize = '15px';
+          document.getElementById('palabra').style.color = "green";
         }
       </script>
   </body>
